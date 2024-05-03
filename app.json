@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "zisarz-app",
+    "scheme": "zisarz",
     "slug": "zisarz-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -21,10 +22,28 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.zisarz.zisarzapp"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "bee3fb6c-93f8-4d75-a532-e73afe9edaf6"
+      }
     }
   }
 }
